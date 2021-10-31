@@ -1,0 +1,67 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"baseStation","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addAttack",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addProtect",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"gameObjectInterf","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "doDeathByBase",
+			"inputs": [
+				{"name":"killer","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"powerAttack","type":"int256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"health","type":"int256"},
+		{"name":"protect","type":"int256"},
+		{"name":"baseStationAddress","type":"address"},
+		{"name":"powerAttack","type":"int256"}
+	]
+}
